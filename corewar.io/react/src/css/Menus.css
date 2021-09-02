@@ -1,0 +1,15 @@
+.coderList {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.coder {
+	padding: 10px;
+	border-radius: var(--radius);
+	text-decoration: none;
+	color: var(--black);
+}
+.coder:hover {
+	background: var(--clear);
+}

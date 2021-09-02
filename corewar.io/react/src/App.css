@@ -1,0 +1,67 @@
+@import '../node_modules/codemirror/lib/codemirror.css';
+@import '../node_modules/codemirror/theme/material.css';
+@import '../node_modules/codemirror/theme/3024-night.css';
+
+@import './css/Colors.css';
+@import './css/Variables.css';
+
+:root {
+	background-color: var(--background);
+	overflow-x: hidden;
+}
+
+.App {
+	text-align: center;
+	/* justify-content: center;
+	align-items: flex-start; */
+	min-height: 80vh;
+	background-color: var(--background);
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 40vmin;
+	pointer-events: none;
+}
+
+.link {
+	text-decoration: none;
+	color: var(--white);
+}
+
+.link:hover {
+	text-decoration: none;
+	color: var(--white);
+	transform: scale(1.03);
+}
+
+.main-card {
+	box-shadow: var(--box-shadow);
+	width: var(--menu-width);
+	border-radius: var(--radius);
+	background-color: var(--main-card-color);
+}
+
+.card {
+	width: 80%;
+	margin: 20px;
+	padding: 30px;
+}
+
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 20px;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

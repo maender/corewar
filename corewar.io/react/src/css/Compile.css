@@ -1,0 +1,98 @@
+.naming-champion input {
+	border: none;
+	/* margin: 10px; */
+	background: var(--reverse-primary);
+	border-radius: var(--radius);
+	padding: 10px;
+	min-width: 200px;
+	height: 30px;
+}
+.naming-champion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 250px;
+	margin: 10px;
+}
+.already-exists {
+	margin: 10px;
+	color: var(--red-darker);
+	font-size: 10px;
+}
+
+.saving-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.dataGrid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-startjjjjjjjj;
+	justify-content: center;
+	max-width: 70vw;
+}
+
+.data {
+	margin: 10px;
+	border-radius: var(--radius);
+	background: var(--clear);
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	opacity: 0.7;
+	transition: all 0.2s;
+}
+.result {
+	margin: 10px;
+	border-radius: var(--radius);
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.result-output {
+	background: var(--material-bkg);
+	color: var(--white);
+	padding: 10px;
+	border-radius: var(--radius);
+	width: 500px;
+	overflow-x: scroll;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+.winner {
+	background: var(--green);
+	color: var(--black);
+}
+.looser {
+	background: var(--red-dark);
+	color: var(--white);
+}
+.data:hover{
+	transform: scale(1.05);
+	opacity: 1;
+}
+
+.winners, .loosers {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex: 0.5
+}
+.winners {
+	justify-content: flex-end;
+}
+.loosers {
+	justify-content: flex-start;
+}

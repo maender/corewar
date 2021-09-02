@@ -1,0 +1,103 @@
+.panes {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	padding: 50px;
+	width: 100%;
+}
+
+.btn-link {
+	text-decoration: none;
+}
+
+.champlist, .challengelist {
+	min-height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.champ, .challenge {
+	margin: 20px;
+	padding: 10px;
+	border-radius: var(--radius);
+	transition: all 0.2s;
+}
+.champ {
+	background: var(--shadow-color);
+}
+.champ:hover, .challenge:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+}
+.champ:hover {
+	background: var(--clear);
+}
+.champ:active, .challenge:active {
+	transform: scale(0.98);
+}
+.pp {
+	--sqrt: 200px;
+	object-fit: cover;
+	width: var(--sqrt);
+	height: var(--sqrt);
+	border-radius: calc(var(--sqrt) / 2);
+	background: var(--clear);
+	margin: 20px;
+	cursor: pointer;
+}
+.progressBar {
+	--sqrt: 200px;
+	width: var(--sqrt);
+	height: var(--sqrt);
+	margin: 20px;
+}
+.pp:hover {
+	background: var(--white);
+}
+
+.profileList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
+}
+
+.profileList input {
+	border: none;
+	text-align: center;
+	margin: 10px;
+	border-radius: var(--radius);
+	padding: 10px;
+	min-width: 200px;
+	height: 30px;
+}
+
+.email-address {
+	background: var(--clear);
+	padding: 15px;
+	border-radius: var(--radius);
+}
+
+.list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 30vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.good {
+	background: var(--green);
+}
+.average {
+	background: var(--yellow);
+}
+.bad {
+	background: var(--red-dark);
+	color: var(--white);
+}

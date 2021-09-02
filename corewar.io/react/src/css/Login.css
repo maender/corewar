@@ -1,0 +1,24 @@
+.login-div input {
+	border: none;
+	margin: 10px;
+	border-radius: var(--radius);
+	padding: 10px;
+	min-width: 200px;
+	height: 30px;
+}
+
+.btn {
+	margin: 10px;
+	border-radius: var(--radius);
+}
+
+.no-account {
+	color: var(--secondary-color);
+	transition: all 0.2s;
+}
+.no-account:hover {
+	transform: scale(1.05);
+}
+.no-account:active {
+	transform: scale(0.98);
+}
